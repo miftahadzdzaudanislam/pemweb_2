@@ -46,14 +46,14 @@ switch ($grade) {
     default:
     $Predikat = "Tidak Ada";
     break;
-}
+};
 
 // Buat Perhitungan IF untuk Mencari Status LULUS/TIDAK LULUS
 if ($total_nilai >= 70){
     $status = "LULUS";
 }else {
     $status = "TIDAK LULUS";
-}
+};
 
 // Cetak hasil
 echo 'Proses: ';
