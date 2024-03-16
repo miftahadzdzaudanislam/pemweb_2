@@ -62,6 +62,6 @@ echo '<br>Mata Kuliah: ' . $matkul ;
 echo '<br>Nilai UTS: ' . $nilai_uts ;
 echo '<br>Nilai UAS: ' . $nilai_uas ;
 echo '<br>Nilai Tugas: ' . $nilai_tugas ;
-echo '<br>Grada: ' . $grade ;
+echo '<br>Grade: ' . $grade ;
 echo '<br>Predikat: ' . $Predikat ;
 echo '<br>Status: ' . $status;
