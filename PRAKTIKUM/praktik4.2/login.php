@@ -1,10 +1,12 @@
 <?php
-    function aut ($email,$pass){
-        if ($email == "admin@gmail.com" && $pass == "admin123") {
-            return true;
-        }else{
-            return false;
-        }
+    // $email = $_POST["email"];
+    // $pass = $_POST["password"];
+    function aut($email, $pass){
+    if ($email == "admin@gmail.com" && $pass == "admin123"){ 
+        echo true;
+    }else{
+        echo false;
+    }
     }
 ?>
 
