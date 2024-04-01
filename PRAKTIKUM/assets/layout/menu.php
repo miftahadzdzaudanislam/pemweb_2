@@ -5,11 +5,11 @@
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Tugas</div>
                             <a class="nav-link" href="index.php">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-clipboard"></i></div>
                                 Tugas 4
                             </a>
                             <a class="nav-link" href="tugas5.php">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-youtube-play"></i></div>
                                 Tugas 5
                             </a>
                             <div class="sb-sidenav-menu-heading">Praktikum</div>
@@ -53,6 +53,18 @@
                                             <a class="nav-link" href="500.html">500 Page</a>
                                         </nav>
                                     </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Projek</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProjek" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-hospital"></i></div>
+                                Projek 1
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProjek" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="form_pasien.php">Form Pasien</a>
+                                    <a class="nav-link" href="data_pasien.php">Data Pasien</a>
                                 </nav>
                             </div>
                         </div>
