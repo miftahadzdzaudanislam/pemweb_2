@@ -19,7 +19,7 @@
                 tgl_lahir, gender, email, alamat, kelurahan_id)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         // definisikan statmen sql
-        $stmt = $koneksi->prepare($sql);
+        $stmt = $dbh->prepare($sql);
         // eksekusi statmen sql
         $stmt->execute($pasien);
     }else if($_proses == "Ubah"){
@@ -28,12 +28,12 @@
         $sql = "UPDATE pasien SET kode=?, nama=?, tmp_lahir=?,
                 tgl_lahir=?, gender=?, email=?, alamat=?,
                 kelurahan_id=? WHERE id=?";
-        $stmt = $koneksi->prepare($sql);    
+        $stmt = $dbh->prepare($sql);    
         $stmt->execute($pasien);
     }else{
         $_idx = $_GET['idx'];
         $sql = 'DELETE FROM pasien WHERE id=?';
-        $stmt = $koneksi->prepare($sql);
+        $stmt = $dbh->prepare($sql);
         $stmt->execute([$_idx]);
     }
     header('Location: data_pasien.php');

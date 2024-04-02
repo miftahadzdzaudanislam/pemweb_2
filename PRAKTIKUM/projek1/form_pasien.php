@@ -5,13 +5,13 @@
     require_once "dbkoneksi.php";
 
     $sql = "SELECT * FROM kelurahan";
-    $statm = $koneksi->query($sql);
+    $statm = $dbh->query($sql);
     $klrhn = $statm->fetchAll();
 
     $_idx = isset($_GET['id']) ? $_GET['id'] : null;
     if($_idx){
         $sql = "SELECT * FROM pasien WHERE id=?";
-        $stmt = $koneksi->prepare($sql);
+        $stmt = $dbh->prepare($sql);
         $stmt->execute([$_idx]);
         $row = $stmt->fetch()? :[];
         $tombol = "Ubah";

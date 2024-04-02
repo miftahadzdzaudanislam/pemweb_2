@@ -8,7 +8,7 @@
     $sql = "SELECT pasien.*, kelurahan.nama_kel FROM pasien
             JOIN kelurahan ON pasien.kelurahan_id = kelurahan.id";
     // jalankan query
-    $stmt = $koneksi->query($sql);
+    $stmt = $dbh->query($sql);
     $klrhn = $stmt->fetchAll();
 ?>
 <div class="card">

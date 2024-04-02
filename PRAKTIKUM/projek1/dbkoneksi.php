@@ -13,5 +13,5 @@
         PDO::ATTR_EMULATE_PREPARES=>false,
     ];
 
-    $koneksi = new PDO($dsn,$user,$pass,$otp);
+    $dbh = new PDO($dsn,$user,$pass,$otp);
 ?>
