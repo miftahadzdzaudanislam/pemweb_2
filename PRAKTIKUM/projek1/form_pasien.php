@@ -86,7 +86,8 @@
         <div class="form-group row">
             <label for="alamat" class="col-4 col-form-label">Alamat</label> 
             <div class="col-8">
-            <textarea id="alamat" name="alamat" cols="40" rows="5" class="form-control"><?= isset($row['alamat'])? $row['alamat']: '' ?></textarea>
+            <textarea id="alamat" name="alamat" cols="40" rows="5" class="form-control"><?= isset($row['alamat'])? $row['alamat']: '' ?>
+            </textarea>
             </div>
         </div>
         <div class="form-group row">
